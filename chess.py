@@ -460,9 +460,9 @@ class Chess:
 					
 		# If not selected, highlights the king if he is in check
 		elif self.black_king.is_check(self.board):
-			highlight_border(surface, self.black_king, (200, 0, 0))
+			highlight_border(surface, self.black_king.position, (200, 0, 0))
 		elif self.white_king.is_check(self.board):
-			highlight_border(surface, self.white_king, (200, 0, 0))
+			highlight_border(surface, self.white_king.position, (200, 0, 0))
 
 		pygame.display.update()
 
